@@ -26,7 +26,6 @@ reference_geographique = object_parsed["items"].first["adressesOperateurs"]
                             # "Siège social"]}
 puts reference_geographique.first["lat"]
 puts reference_geographique.first["long"]
-# puts object_parsed["items"].first["adressesOperateurs"]["long"].to_i
 
 
 # TEST 2 raison sociale
