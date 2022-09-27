@@ -10,11 +10,11 @@ class Shop
     @types = types
   end
 
-  def to_s
-    # HEREDOC syntax
-    <<~STR
-    (#{@id}) #{@name}. It weights #{@weight.fdiv(10)}kg for \
-    a height of #{@height / 10.0}m. Its types are: #{@types.join(', ')}.
-    STR
-  end
+  # def to_s
+  #   # HEREDOC syntax
+  #   <<~STR
+  #   (#{@id}) #{@name}. It weights #{@weight.fdiv(10)}kg for \
+  #   a height of #{@height / 10.0}m. Its types are: #{@types.join(', ')}.
+  #   STR
+  # end
 end
