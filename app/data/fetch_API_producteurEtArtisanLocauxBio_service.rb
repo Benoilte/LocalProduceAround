@@ -1,6 +1,8 @@
 require "json"
 require "open-uri"
 require_relative "shop"
+
+
 # Appel de toute la data: endpoint principal: https://opendata.agencebio.org/api/gouv/operateurs/
 # url = "https://opendata.agencebio.org/api/gouv/operateurs"
 
@@ -11,28 +13,7 @@ p object_parsed.class
 puts object_parsed["nbTotal"] # => nb total de magasin référencé aux alentours de Nantes
 # p object_parsed
 
-# TEST longitude et latitude
-reference_geographique = object_parsed["items"].first["adressesOperateurs"]
-# reference_geographique => {"id"=>173657,
-                            # "lieu"=>"5 MAIL PABLO PICASSO",
-                            # "codePostal"=>"44000",
-                            # "ville"=>"NANTES",
-                            # "lat"=>47.2159156,
-                            # "long"=>-1.5339207,
-                            # "codeCommune"=>"44109",
-                            # "active"=>true,
-                            # "departementId"=>46,
-                            # "typeAdresseOperateurs"=>["Lieux d'activité",
-                            # "Siège social"]}
-puts reference_geographique.first["lat"]
-puts reference_geographique.first["long"]
-
-
-# TEST 2 raison sociale
-# puts object_parsed["items"].first["raisonSociale"]
-# => response = 7 BRASSES
-
-# TEST 1 le premier items de obectef_parsed de la data à travailler
+# TEST 1 le premier items de object_parsed de la data à travailler
 # puts object_parsed["items"].first
 # => response =  Hash
 # {
@@ -76,6 +57,27 @@ puts reference_geographique.first["long"]
 #                     "url"=>"https://www.certipaq.solutions/bio/certificats/fiche/54246/7-brasses-sas/"}],
 #   "mixite"=>"Non"
 # }
+
+# TEST 2 raison sociale
+# puts object_parsed["items"].first["raisonSociale"]
+# => response = 7 BRASSES
+
+# TEST longitude et latitude
+reference_geographique = object_parsed["items"].first["adressesOperateurs"]
+# reference_geographique => {"id"=>173657,
+                            # "lieu"=>"5 MAIL PABLO PICASSO",
+                            # "codePostal"=>"44000",
+                            # "ville"=>"NANTES",
+                            # "lat"=>47.2159156,
+                            # "long"=>-1.5339207,
+                            # "codeCommune"=>"44109",
+                            # "active"=>true,
+                            # "departementId"=>46,
+                            # "typeAdresseOperateurs"=>["Lieux d'activité",
+                            # "Siège social"]}
+puts reference_geographique.first["lat"]
+puts reference_geographique.first["long"]
+
 
 
 # puts "#{object_parsed["items"]}"
