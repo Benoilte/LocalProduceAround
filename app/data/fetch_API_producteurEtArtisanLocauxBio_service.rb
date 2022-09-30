@@ -77,6 +77,7 @@ reference_geographique = object_parsed["items"].first["adressesOperateurs"]
                             # "Siège social"]}
 puts reference_geographique.first["lat"]
 puts reference_geographique.first["long"]
+# array simple dans un hash et donc si plusieurs magasin il faudra itérer
 
 
 

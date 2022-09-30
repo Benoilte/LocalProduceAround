@@ -3,8 +3,11 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 
 # Introduction
   - Help users to find local product around them!
+  - Opensource Project Ruby on Rails (MVC)
 
 # Questions and reflexions
+- In a MVC with fetching API who had to fetch the data ( out of the MVC or the M or the C)?
+- What about the data from the resquest, should we saved it in the DB or just keep it temporary for the view to the user.
 - relfexion => tout scrapper pour mettre dans la DB // comment savoir la fréquence de mise à jour de l'api.
 - créer une table produits ( pour les différents légumes, fruits => courgettes, carottes etc..)
 - p2 // laisser une interface pour les producteurs non référencé sur l'API afin qu'un tiers puisse le rajouter.
