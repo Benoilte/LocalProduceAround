@@ -1,6 +1,10 @@
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
 
 
+# Introduction
+  - Help users to find local product around them!
+
+# Questions and reflexions
 - relfexion => tout scrapper pour mettre dans la DB // comment savoir la fréquence de mise à jour de l'api.
 - créer une table produits ( pour les différents légumes, fruits => courgettes, carottes etc..)
 - p2 // laisser une interface pour les producteurs non référencé sur l'API afin qu'un tiers puisse le rajouter.
@@ -8,6 +12,9 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 
 - features sympa:
 recherche + recherche avancée ( avec radio button pour filtre par catégories et activités)
+
+
+# Data Base structure
 
 *** shops ***
 --> stuff :
