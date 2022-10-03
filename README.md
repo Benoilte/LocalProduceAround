@@ -6,7 +6,7 @@ Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/ra
 - Opensource Project Ruby on Rails (MVC)
 
 # Stuff
-- API endpoint: https://opendata.agencebio.org/api/gouv/operateurs/
+- URL: https://opendata.agencebio.org/api/gouv/operateurs/
 - gems :
   - geocoder --> find longitude and latitude for an address
   - mapbox --> display map
@@ -25,7 +25,7 @@ recherche + recherche avancée ( avec radio button pour filtre par catégories e
 
 # Data Base structure
 
-*** shops ***
+*** SHOPS ***
 
 - MODEL:
   - add 2 columun longitude and latitude as a float
@@ -54,7 +54,7 @@ recherche + recherche avancée ( avec radio button pour filtre par catégories e
   - input address searchbar
 
 
-*** users ***
+*** USERS ***
 
 - MODEL:
   - first name
@@ -65,19 +65,19 @@ recherche + recherche avancée ( avec radio button pour filtre par catégories e
 
 - CONTROLLER: (handled by devise)
 
-*** products ***
+*** PRODUCTS ***
 (comment faire des famille de produits ex: )
 - nom du produit
 - (type ( foreign key))
 
-*** catégories ***
+*** CATEGORIES ***
 - MODEL:
   - name
 
-*** activities ***
+*** ACTIVITIES ***
 - MODEL:
   - name
 
-*** product_type ***
+*** PRODUCT_TYPE ***
 - MODEL:
   - name
